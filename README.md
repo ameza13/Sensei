@@ -1,27 +1,45 @@
 # Sensei (先生)
-A simple, powerful, minimal codebase to generate synthetic data using OpenAI, MistralAI or AnthropicAI
+A simple, powerful, minimal codebase to generate synthetic data using OpenAI, MistralAI, AnthropicAI, or offline inference with vLLM
 
 ![alt text](Sensei.png)
 
-# How to run
+# Environment set up
 
-- `pip install openai mistralai numpy`
+Create a virtual environment and install the following packages:
 
-## Choose your provider: OpenAI or MistralAI
+- `pip install --upgrade pip`
+- `pip install --no-cache-dir -r ./requirements.txt`
+
+## API text generation
+
+### Choose your provider: OpenAI or MistralAI
 - Change `PROVIDER` under `params.py`
 - `openai`, `mistral` or `anthropic`
 
-### For OpenAI
+#### For OpenAI
 - Change `GPT_MODEL`, `OPENAI_API_KEY` and `OUTPUT_FILE_PATH` under `params.py`
 
-### For MistralAI
+#### For MistralAI
 - Change `MISTRALAI_MODEL`, `MISTRALAI_API_KEY` and `OUTPUT_FILE_PATH` under `params.py`
 
-### For AnthropicAI
+#### For AnthropicAI
 - Change `ANTHROPICAI_MODEL`, `ANTHROPICAI_API_KEY` and `OUTPUT_FILE_PATH` under `params.py`
 
-## Run Sensei
+### Run Sensei
 - Run with `python main.py`
+
+## Offline text generation with vLLM
+
+### For MistralAI
+- Run with `sensei_vllm.py`
+
+This is an example that generates 100 input-output pairs with `mistralai/Mixtral-8x7B-Instruct-v0.1`
+
+```python
+python sensei_vllm.py --model-id mistralai/Mixtral-8x7B-Instruct-v0.1 --backend vllm --tensor-parallel-size 8 --max_len 1024 --dtype float16 --domain lang --outputs ./ --num_instances 100
+```
+
+To use the system prompts for code change domain from lang to code (`--domain code`)
 
 # Optional
 
