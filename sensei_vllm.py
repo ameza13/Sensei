@@ -266,7 +266,7 @@ def parse_arguments():
     parser.add_argument("--outputs",
                         type=str,
                         required=False,
-                        default="../outputs/", 
+                        default="./", 
                         help="Directory to store output files")
     parser.add_argument("--domain",
                         type=str,
