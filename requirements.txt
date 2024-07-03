@@ -1,0 +1,5 @@
+vllm==0.4.3
+polars
+openai 
+mistralai
+anthropic
