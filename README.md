@@ -33,10 +33,10 @@ Create a virtual environment and install the following packages:
 ### For MistralAI
 - Run with `sensei_vllm.py`
 
-This is an example that generates 100 input-output pairs with `mistralai/Mixtral-8x7B-Instruct-v0.1`
+This example generates 100 input-output pairs per iteration by using a local instance of `mistralai/Mixtral-8x7B-Instruct-v0.1` for text generation. The script runs an infinite loop and adds samples to an output file after each iteration.
 
 ```python
-python sensei_vllm.py --model-id mistralai/Mixtral-8x7B-Instruct-v0.1 --backend vllm --tensor-parallel-size 8 --max_len 1024 --dtype float16 --domain lang --outputs ./ --num_instances 100
+python sensei_vllm.py --model-id mistralai/Mixtral-8x7B-Instruct-v0.1 --backend vllm --tensor-parallel-size 8 --max_len 1024 --dtype float16 --domain lang --outputs ./ --samples_per_iter 100
 ```
 
 To use the system prompts for code change domain from lang to code (`--domain code`)
