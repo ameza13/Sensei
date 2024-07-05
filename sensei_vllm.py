@@ -74,7 +74,7 @@ def sensei(llm_pipeline,
         TOPICS = TOPICS_31_35
     elif topics_group == "H":
         TOPICS = TOPICS_35_40
-    elif topics_group == "E":
+    elif topics_group == "I":
         TOPICS = TOPICS_41_45
     elif topics_group == "J":
         TOPICS = TOPICS_45_50
