@@ -99,7 +99,7 @@ TOPICS_31_35 = [
     "Space - astronomy, spaceflight, exploration, space technology, universe",
     "Weather & Climate - meteorology, forecasting, natural disasters, seasons",
 ]
-TOPICS_35_40 = [
+TOPICS_36_40 = [
     "Food & Cooking - nutrition, recipes, diets, food science, restaurants",
     "Pets & Animals - breeds, care, veterinary medicine, wildlife, animal behavior",
     "Gardening - plants, landscaping, flowers, vegetables, lawn care, tools",
@@ -113,7 +113,7 @@ TOPICS_41_45 = [
     "Race & Ethnicity - cultures, discrimination, identity, immigration, diversity",
     "Gender & Sexuality - LGBTQ issues, feminism, roles, relationships, equality",
 ]
-TOPICS_45_50 = [
+TOPICS_46_50 = [
     "Employment - careers, human resources, resumes, workplace culture, unions",
     "Crime & Justice - laws, law enforcement, courts, prisons, investigations",
     "Social Issues - poverty, homelessness, human rights, community service",

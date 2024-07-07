@@ -12,7 +12,7 @@ from system_messages import (
     SYSTEM_MESSAGES_TESS,
     SYSTEM_MESSAGES_CODE,
 )
-from topics import ALL_TOPICS, TOPICS_1_5, TOPICS_6_10, TOPICS_11_15, TOPICS_16_20, TOPICS_21_25, TOPICS_26_30, TOPICS_31_35, TOPICS_35_40, TOPICS_41_45, TOPICS_45_50
+from topics import ALL_TOPICS, TOPICS_1_5, TOPICS_6_10, TOPICS_11_15, TOPICS_16_20, TOPICS_21_25, TOPICS_26_30, TOPICS_31_35, TOPICS_36_40, TOPICS_41_45, TOPICS_46_50
 
 from pipelines import pipeline_setup, prepare_dataset, VLLMPipeline
 
@@ -73,11 +73,11 @@ def sensei(llm_pipeline,
     elif topics_group == "G":
         TOPICS = TOPICS_31_35
     elif topics_group == "H":
-        TOPICS = TOPICS_35_40
+        TOPICS = TOPICS_36_40
     elif topics_group == "I":
         TOPICS = TOPICS_41_45
     elif topics_group == "J":
-        TOPICS = TOPICS_45_50
+        TOPICS = TOPICS_46_50
     else:
         TOPICS = ALL_TOPICS
     
