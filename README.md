@@ -40,6 +40,7 @@ python sensei_vllm.py --model-id mistralai/Mixtral-8x7B-Instruct-v0.1 --backend 
 ```
 
 To use the system prompts for code change domain from lang to code (`--domain code`)
+To use a specific group of topics (`--topics_group`)
 
 # Optional
 
