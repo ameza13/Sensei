@@ -1,4 +1,4 @@
-ALL_TOPICS = [
+TOPICS = [
     "Science - physics, chemistry, biology, astronomy, etc.",
     "Mathematics - algebra, geometry, calculus, statistics, etc.",
     "Technology - computers, engineering, AI, robotics, etc.",
