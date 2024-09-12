@@ -1,12 +1,11 @@
 import os
 import json
 
-import matplotlib.pyplot as plt
-from topics import ALL_TOPICS
+from topics import TOPICS
 import argparse
 
 """
-python filtering.py --input_dir /input/dir/path --file_name sensei-4c84.jsonl > log.txt
+python filtering.py --input_dir /sensei-datasets/ --file_name sensei-0219.jsonl > log-0219.txt
 """
 
 # Seed dataset is a jsonl file
@@ -44,7 +43,7 @@ if __name__ == "__main__":
     QUESTION_STR = ["Question:","QUESTION:"]
     for instance in instances:
         filtered = ""
-        for topic in ALL_TOPICS:
+        for topic in TOPICS:
             if topic in instance["input"]:
                 filtered = instance["input"].replace(topic,"").strip()
 
